@@ -46,7 +46,6 @@ async function onFormSubmit(e) {
         }
         handleGalleryResponse(data);
     } catch (error) {
-        console.error(error);
         showError('Unable to get images');
     } finally {
         loader.style.display = 'none';
@@ -62,7 +61,6 @@ async function onLoadMoreClick() {
         handleGalleryResponse(data);
         scroll();
     } catch (error) {
-        console.error(error);
         showError('Unable to get images');
     } finally {
         loader.style.display = 'none';
