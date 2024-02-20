@@ -31,7 +31,9 @@ export function createGallery(elems) {
         })
         .join('');
     
-    gallery.innerHTML = markup;
+    gallery.insertAdjacentHTML('beforeend', markup);
 
     lightbox.refresh();
 }
+
+// return elems.map(galleryMarkup).join('');
